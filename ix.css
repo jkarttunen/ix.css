@@ -1,0 +1,14 @@
+
+.ix-toggle {
+   visibility: hidden;
+}
+
+
+/* Toggled State */
+.ix-toggle:checked ~ .ix-toggle-on, .ix-toggle:not(:checked) ~ .ix-toggle-off  {
+   display: block;
+}
+
+.ix-toggle:not(:checked) ~ .ix-toggle-on, .ix-toggle:checked ~ .ix-toggle-off  {
+   display: none;
+}
